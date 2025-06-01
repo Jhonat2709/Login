@@ -208,3 +208,8 @@ body, html {
         max-width: 60%;
     }
 }
+
+#backButton img {
+    width: 30px; /* Ajusta el ancho a un tamaño estándar */
+    height: auto; /* Mantiene la proporción */
+}
