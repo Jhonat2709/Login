@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 /* Importa la fuente Montserrat para la página. */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
 
 /* Estilos base para el cuerpo y HTML, asegurando altura completa y fuente principal. */
+=======
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+
+>>>>>>> 2856f83ce1ba37e9f327f7d5d9e33e832ff78fda
 body, html {
     height: 100%;
     width: 100%;
@@ -10,7 +15,10 @@ body, html {
     overflow: hidden;
 }
 
+<<<<<<< HEAD
 /* Contenedor principal de la página de login, con imagen de fondo y centrado de contenido. */
+=======
+>>>>>>> 2856f83ce1ba37e9f327f7d5d9e33e832ff78fda
 .login-page-wrapper {
     position: relative;
     width: 100%;
@@ -25,14 +33,20 @@ body, html {
 
 }
 
+<<<<<<< HEAD
 /* Capa de contenido superpuesta para limitar el ancho del diseño. */
+=======
+>>>>>>> 2856f83ce1ba37e9f327f7d5d9e33e832ff78fda
 .content-layer {
     position: relative;
     width: 100%;
     max-width: 1100px;
 }
 
+<<<<<<< HEAD
 /* Columna para el formulario de login, ajusta alineación y espaciado. */
+=======
+>>>>>>> 2856f83ce1ba37e9f327f7d5d9e33e832ff78fda
 .login-form-column {
     display: flex;
     flex-direction: column;
@@ -43,7 +57,10 @@ body, html {
     transform: translateX(-7%);
 }
 
+<<<<<<< HEAD
 /* Columna para la marca o logo, ajusta alineación y espaciado. */
+=======
+>>>>>>> 2856f83ce1ba37e9f327f7d5d9e33e832ff78fda
 .brand-column {
     display: flex;
     flex-direction: column;
@@ -54,16 +71,24 @@ body, html {
     padding-bottom: 35%;
 }
 
+<<<<<<< HEAD
 /* Contenedor específico para el formulario de inicio de sesión. */
+=======
+>>>>>>> 2856f83ce1ba37e9f327f7d5d9e33e832ff78fda
 .login-form-container {
     max-width: 420px;
     width: 100%;
     padding: 1rem 0;
     text-align: center;
+<<<<<<< HEAD
     margin-left: 20px;
 }
 
 /* Título del formulario ("Iniciar Sesión"). */
+=======
+}
+
+>>>>>>> 2856f83ce1ba37e9f327f7d5d9e33e832ff78fda
 .login-form-container .form-title {
     font-weight: 800;
     font-size: 2rem; 
@@ -78,7 +103,10 @@ body, html {
     position: relative;
 }
 
+<<<<<<< HEAD
 /* Línea decorativa debajo del título del formulario. */
+=======
+>>>>>>> 2856f83ce1ba37e9f327f7d5d9e33e832ff78fda
 .login-form-container .form-title::after {
     content: '';
     position: absolute;
@@ -90,13 +118,19 @@ body, html {
     background-color: #000;
 }
 
+<<<<<<< HEAD
 /* Grupo de campos del formulario (etiqueta + input). */
+=======
+>>>>>>> 2856f83ce1ba37e9f327f7d5d9e33e832ff78fda
 .form-group {
     margin-bottom: 3.4rem;
     margin-top: 3.4rem;
 }
 
+<<<<<<< HEAD
 /* Etiquetas para los campos de entrada (Usuario, Contraseña). */
+=======
+>>>>>>> 2856f83ce1ba37e9f327f7d5d9e33e832ff78fda
 .form-group label {
     display: block;
     margin-bottom: 0.5rem;
@@ -107,12 +141,18 @@ body, html {
     letter-spacing: 0.5px;
 }
 
+<<<<<<< HEAD
 /* Contenedor para el campo de entrada y su icono. */
+=======
+>>>>>>> 2856f83ce1ba37e9f327f7d5d9e33e832ff78fda
 .input-icon-wrapper {
     position: relative;
 }
 
+<<<<<<< HEAD
 /* Estilos para los campos de entrada personalizados. */
+=======
+>>>>>>> 2856f83ce1ba37e9f327f7d5d9e33e832ff78fda
 .custom-input {
     width: 100%;
     border: none !important;
@@ -125,17 +165,26 @@ body, html {
     font-size: 0.95rem;
 }
 
+<<<<<<< HEAD
 /* Placeholder dentro de los campos de entrada. */
+=======
+>>>>>>> 2856f83ce1ba37e9f327f7d5d9e33e832ff78fda
 .custom-input::placeholder {
     font-size: 0.80rem;
 }
 
+<<<<<<< HEAD
 /* Borde inferior del campo de entrada cuando está enfocado. */
+=======
+>>>>>>> 2856f83ce1ba37e9f327f7d5d9e33e832ff78fda
 .custom-input:focus {
     border-bottom-color: #000 !important;
 }
 
+<<<<<<< HEAD
 /* Icono dentro del campo de entrada. */
+=======
+>>>>>>> 2856f83ce1ba37e9f327f7d5d9e33e832ff78fda
 .input-icon {
     position: absolute;
     top: 50%;
@@ -146,7 +195,10 @@ body, html {
     pointer-events: none;
 }
 
+<<<<<<< HEAD
 /* Botón principal de login. */
+=======
+>>>>>>> 2856f83ce1ba37e9f327f7d5d9e33e832ff78fda
 .btn-login {
     background-color: #000 !important;
     color: #fff !important;
@@ -164,7 +216,10 @@ body, html {
     margin-top: 2rem;
 }
 
+<<<<<<< HEAD
 /* Imagen del logo de la marca. */
+=======
+>>>>>>> 2856f83ce1ba37e9f327f7d5d9e33e832ff78fda
 .brand-logo-image {
     max-width: 125%;
     height: 100%;
@@ -172,7 +227,10 @@ body, html {
     margin-top: 10%;
 }
 
+<<<<<<< HEAD
 /* Estilos para mensajes de error personalizados. */
+=======
+>>>>>>> 2856f83ce1ba37e9f327f7d5d9e33e832ff78fda
 .alert-custom-error {
     color: #721c24;
     background-color: #f8d7da;
@@ -184,7 +242,10 @@ body, html {
     font-size: 0.9em;
 }
 
+<<<<<<< HEAD
 /* Media Query para ajustar estilos en pantallas más pequeñas (responsive). */
+=======
+>>>>>>> 2856f83ce1ba37e9f327f7d5d9e33e832ff78fda
 @media (max-width: 768px) {
     body, html {
         height: auto;
@@ -232,7 +293,10 @@ body, html {
     }
 }
 
+<<<<<<< HEAD
 /* Botón para volver a la página anterior. */
+=======
+>>>>>>> 2856f83ce1ba37e9f327f7d5d9e33e832ff78fda
 #backButton {
     position: absolute;
     top: 30px;
@@ -240,7 +304,10 @@ body, html {
     z-index: 100;
 }
 
+<<<<<<< HEAD
 /* Imagen dentro del botón de volver. */
+=======
+>>>>>>> 2856f83ce1ba37e9f327f7d5d9e33e832ff78fda
 #backButton img {
     width: 30px;
     height: auto;
