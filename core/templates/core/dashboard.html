@@ -15,7 +15,7 @@
     <div class="row row-cols-1 row-cols-md-3 g-4">
         {% for tesis in ultima_tesis_carrera %}
         <div class="col">
-            <div class="card h-100 card-custom">
+            <div class="card card-animacion card-custom h-100">
                 {% if tesis.carrera == 'Ingeniería Electrónica' %}
                 <div class="card-header-tag ingenieria-electronica">{{ tesis.carrera }}</div>
                 {% elif tesis.carrera == 'Ingeniería Civil' %}
@@ -45,4 +45,3 @@
 </div>
 
 {% endblock main %}
-

@@ -1,142 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
 
- body, html {
-        /* Estilos básicos para que el ejemplo se parezca a la imagen */
-        body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #edf1f0;
-        }
-/* Estilos básicos */
 body, html {
     margin: 0;
     padding: 0;
 }
 
 body {
-    /* Estilos básicos para que el ejemplo se parezca a la imagen */
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Segoe UI', 'Montserrat';
     background-color: #edf1f0;
-    line-height: 1.5; /* Movido aquí para aplicación general */
-    background-color: #edf1f0; /* Color de fondo general del body */
-    line-height: 1.6; /* Ajustado para mejor legibilidad */
-    color: #333; /* Color de texto base */
-    background-color: #edf1f0; 
-    line-height: 1.6; 
-    color: #333; 
+    line-height: 1.6;
+    color: #333;
 }
 
-/* Estilos para la sección "Acerca del Repositorio" */
-        .acerca-repositorio {
+.acerca-repositorio {
     display: flex;
-    justify-content: center; /* Centra la tarjeta horizontalmente */
-    align-items: center; /* Centra la tarjeta verticalmente */
-    flex-direction: column; /* Asegura que los elementos se apilen correctamente */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
-.acerca-repositorio {
-    background-color: #eef2f9; 
     padding: 50px 20px;
 }
-        .card {
-            background-color: #ffffff;
-            border-radius: 8px;
-            border-radius: 8px; /* Coincide con el border-radius de las tarjetas del dashboard */
-            padding: 30px;
-            max-width: 300px;
-            max-width: 300px; /* Mantener el ancho máximo */
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-            text-align: center;
 
-        }
-            line-height: 1.5;
-        }
-/* Estilos para la sección "Acerca del Repositorio" en footer.html */
-.acerca-repositorio {
-    background-color: #eef2f9; /* Color de fondo blanco/claro */
-    background-color: #eef2f9; /* Un color de fondo claro, diferente al body general */
-    background-color: #eef2f9; 
-    padding: 50px 20px;
-    text-align: center; /* Añadido para centrar el título y contenido de esta sección */
-    text-align: center; /* Centra el título h2 */
-    text-align: center; 
-}
-
-        /* Footer tradicional */
-.card {
-    flex: none; /* Evita que las tarjetas cambien de tamaño o se desplacen */
-    position: relative;
-}
 .acerca-repositorio h2 {
-    margin-bottom: 40px; /* Espacio debajo del título "Acerca del Repositorio" */
-    font-size: 2.25rem; /* Tamaño del título */
-    font-weight: 700; /* Montserrat bold */
-    color: #2c3e50; /* Un color oscuro azulado para el título */
-    margin-bottom: 40px; 
-    font-size: 2.25rem; 
-    font-weight: 700; 
-    color: #2c3e50; 
+    margin-bottom: 40px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000000;
 }
 
 .cards-container {
     display: flex;
-    justify-content: center; /* Distribuye las tarjetas en izquierda, centro y derecha */
-    align-items: center; /* Asegura que todas las tarjetas estén alineadas verticalmente */
+    justify-content: space-between;
+    align-items: flex-start;
     flex-wrap: nowrap;
-    gap: 30px; /* Espaciado entre tarjetas */
-    max-width: 1200px; /* Define el ancho máximo del contenedor */
-    margin: 0 auto; /* Centra el contenedor en la página */
-    justify-content: space-between; 
-    align-items: flex-start; /* Alinea las tarjetas por la parte superior */
-    gap: 30px; 
-    gap: 30px; /* <--- ESTA ES LA PROPIEDAD CLAVE PARA EL ESPACIO ENTRE TARJETAS */
-    max-width: 1200px; 
-    margin: 0 auto; 
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 3px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 30px;
+    max-width: 300px;
+    text-align: center;
+    flex: none;
 }
 
 .acerca-repositorio .card {
-    background-color: #ffffff;
     border-radius: 10px;
-    padding: 30px;
     max-width: 320px;
     box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-    text-align: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin: auto; /* Centra la tarjeta */
-    /* align-items y text-align se definirán en clases específicas */
-    /* flex: 1; se aplicará en clases específicas */
-    flex-direction: column; /* El contenido interno de la card (icono, h4, p) se apila verticalmente */
-    animation: none !important;
-    transition: none !important;
-    /* text-align y align-items se manejan en las clases específicas .acceso-conocimiento, etc. */
-    max-width: 320px; /* Ancho máximo opcional por tarjeta */
+    flex: 1;
 }
 
 .acerca-repositorio .card i {
-    font-size: 2.8rem; /* Tamaño de los íconos */
-    font-size: 2.8rem; 
+    font-size: 2.8rem;
     margin-bottom: 20px;
-    color: #007bff; /* Color primario de Bootstrap para los íconos */
-    color: #007bff; 
+    color: #000000;
 }
 
 .acerca-repositorio .card .fa-solid {
-.acerca-repositorio .card .fa-solid { /* Oculta los iconos de FontAwesome si se prefieren los de Bootstrap Icons (bi) */
-    display: none; /* Oculta los iconos de FontAwesome si prefieres usar solo Bootstrap Icons */
+    display: none;
 }
 
-.acerca-repositorio .card h4 { /* Unificado h3 y h4 a h4 */
 .acerca-repositorio .card h4 {
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 1.3rem;
-    font-weight: 600; /* Montserrat semibold */
-    color: #34495e; /* Un color oscuro para los títulos de las cards */
-    font-weight: 600; 
-    color: #34495e; 
+    font-weight: 600;
+    color: #34495e;
 }
 
 .acerca-repositorio .card p {
@@ -145,87 +81,9 @@ body {
     line-height: 1.7;
 }
 
-/* Footer tradicional */
-/* Estilos para el pie de página (footer) */
-        .site-footer {
-            background-color: #343a40;
-            color: #ffffff;
-            text-align: center;
-            padding: 20px;
-        }
-         .site-footer p {
-            margin: 0;
-        }
-        a {
-            color: #0056b3;
-            text-decoration: none;
-        }
-    
-
-
-    
-/* Ajuste individual para cada tarjeta */
-.acceso-conocimiento,
-.busqueda-avanzada,
-.descarga-inmediata {
-    flex: 1; /* Permite que las tarjetas compartan el espacio */
-    flex: 1; /* Permite que las tarjetas compartan el espacio disponible en el contenedor */
-}
-
-.acceso-conocimiento {
-    text-align: left; 
-    align-items: flex-start; /* Alinea contenido interno a la izquierda */
-    align-items: flex-start; /* Alinea el contenido interno de la card (icono, h4, p) a la izquierda */
-}
-
-.busqueda-avanzada {
-    text-align: center;
-    align-items: center; /* Alinea contenido interno al centro */
-    align-items: center; /* Alinea el contenido interno de la card al centro */
-}
-
-.descarga-inmediata {
-    text-align: right; 
-    align-items: flex-end; /* Alinea contenido interno a la derecha */
-    align-items: flex-end; /* Alinea el contenido interno de la card a la derecha */
-}
-
-/* Footer tradicional */
 .site-footer {
-    background-color: #343a40;
-    background-color: #343a40; /* Color oscuro para el footer */
-    background-color: #343a40; 
-    color: #ffffff;
+    color: #000000;
+    margin-top: 0;
     text-align: center;
-    padding: 20px;
-    padding: 25px 20px; /* Padding vertical y horizontal */
-    padding: 25px 20px; 
-}
-.site-footer p {
     font-size: 0.9rem;
 }
-
-/* Ajuste individual para cada tarjeta */
-.acceso-conocimiento {
-    flex: 1; /* Ocupa espacio en la parte izquierda */
-    text-align: left; /* Alinea el texto a la izquierda */
-    margin: auto; 
-}
-
-.busqueda-avanzada {
-    flex: 1; /* Se mantiene en el centro */
-    text-align: center;
-    margin: auto;
-}
-
-.descarga-inmediata {
-   flex: 1; /* Se coloca a la derecha */
-   text-align: right; /* Alinea el contenido a la derecha */  
-   margin: auto;  
-        }
-    }
-    text-decoration: underline; 
-    color: #0056b3; 
-        }
-    }
-} 

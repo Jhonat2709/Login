@@ -124,7 +124,7 @@ body, html {
 }
 /* Estilos personalizados para las tarjetas (cards) */
 .card.card-custom {
-    height: 100%;
+    /* height: 100%; */ /* Usaremos h-100 de Bootstrap en el HTML para igualar alturas */
     position: relative;
     display: flex;
     flex-direction: column;
@@ -134,7 +134,7 @@ body, html {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 /* Efecto hover para las tarjetas */
-.card:hover {
+.card-animacion:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -151,39 +151,38 @@ body, html {
 }
 /* Cuerpo de la tarjeta */
 .card-body {
-    padding: 55px 20px 50px 20px;
+    padding: 20px; /* Reducimos padding-bottom para menor altura */
     flex-grow: 1;
     position: relative;
     display: flex;
     flex-direction: column;
+    text-align: left;
 }
 /* Título de la tesis dentro de la tarjeta (con truncamiento de texto) */
 .card-title {
     font-weight: bold;
-    margin-bottom: 15px;
-   p {
+    margin-bottom: 18px; /* Aumentamos el margen inferior para mayor separación */
+    /* Estilos para truncar el título a un número de líneas (ej. 3 líneas) */
     display: -webkit-box;
     -webkit-line-clamp: 3;
     line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
-
-}
 /* Texto general dentro de la tarjeta (autores, fecha) */
 .card-text {
     color: #666;
-    margin-bottom: 10px;
+    margin-bottom: 12px; /* Aumentamos el margen inferior para mayor separación */
 }
 /* Estilo específico para el último texto antes del indicador PDF, para asegurar espaciado */
 .card-text.card-text-last {
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Reducimos margen inferior para acercar el PDF */
 }
 /* Indicador visual de PDF en la esquina inferior derecha de la tarjeta */
 .pdf-indicator {
     position: absolute;
-    bottom: 15px;
-    right: 20px;
+    bottom: 1px; /* Ajustamos para el nuevo padding-bottom del card-body */
+    right: 15px; /* Ajustado para simetría con el 'bottom' */
     display: inline-flex;
     align-items: center;
     font-weight: 500;
