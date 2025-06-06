@@ -11,6 +11,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <link rel="stylesheet" href="{% static 'core/css/dashboard_styles.css' %}">
+
+    <link rel="stylesheet" href="{% static 'core/css/footer_styles.css' %}">
    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
@@ -20,6 +22,7 @@
 <!-- Bloque de Django para insertar el contenido del footer. -->
 <!-- Este bloque se define en la plantilla que extiende a esta (footer.html). -->
 {% block footer %}
+{% load static %}
 {% endblock footer %}
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

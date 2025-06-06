@@ -161,11 +161,14 @@ body, html {
 .card-title {
     font-weight: bold;
     margin-bottom: 15px;
+   p {
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    text-overflow: ellipsis;
+}
+
 }
 /* Texto general dentro de la tarjeta (autores, fecha) */
 .card-text {
