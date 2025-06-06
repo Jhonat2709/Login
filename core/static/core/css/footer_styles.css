@@ -47,6 +47,7 @@ body {
             max-width: 300px; /* Mantener el ancho máximo */
             box-shadow: 0 4px 12px rgba(0,0,0,0.05);
             text-align: center;
+
         }
             line-height: 1.5;
         }
@@ -63,6 +64,9 @@ body {
 
         /* Footer tradicional */
 .card {
+    flex: none; /* Evita que las tarjetas cambien de tamaño o se desplacen */
+    position: relative;
+}
 .acerca-repositorio h2 {
     margin-bottom: 40px; /* Espacio debajo del título "Acerca del Repositorio" */
     font-size: 2.25rem; /* Tamaño del título */
@@ -76,8 +80,9 @@ body {
 
 .cards-container {
     display: flex;
-    justify-content: space-between; /* Distribuye las tarjetas en izquierda, centro y derecha */
+    justify-content: center; /* Distribuye las tarjetas en izquierda, centro y derecha */
     align-items: center; /* Asegura que todas las tarjetas estén alineadas verticalmente */
+    flex-wrap: nowrap;
     gap: 30px; /* Espaciado entre tarjetas */
     max-width: 1200px; /* Define el ancho máximo del contenedor */
     margin: 0 auto; /* Centra el contenedor en la página */
@@ -104,15 +109,10 @@ body {
     /* align-items y text-align se definirán en clases específicas */
     /* flex: 1; se aplicará en clases específicas */
     flex-direction: column; /* El contenido interno de la card (icono, h4, p) se apila verticalmente */
+    animation: none !important;
+    transition: none !important;
     /* text-align y align-items se manejan en las clases específicas .acceso-conocimiento, etc. */
     max-width: 320px; /* Ancho máximo opcional por tarjeta */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.acerca-repositorio .card:hover {
-    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
-    transform: translateY(-5px); 
-    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
 }
 
 .acerca-repositorio .card i {
