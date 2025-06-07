@@ -15,26 +15,28 @@
     <div class="row row-cols-1 row-cols-md-3 g-4">
         {% for tesis in ultima_tesis_carrera %}
         <div class="col">
-            <div class="card card-animacion card-custom h-100">
-                {% if tesis.carrera == 'Ingeniería Electrónica' %}
-                <div class="card-header-tag ingenieria-electronica">{{ tesis.carrera }}</div>
-                {% elif tesis.carrera == 'Ingeniería Civil' %}
-                <div class="card-header-tag ingenieria-civil">{{ tesis.carrera }}</div>
-                {% elif tesis.carrera == 'Ingeniería Informática' %}
-                <div class="card-header-tag ingenieria-informatica">{{ tesis.carrera }}</div>
-                {% else %}
-                <div class="card-header-tag">{{ tesis.carrera }}</div>
-                {% endif %}
-                
-                <div class="card-body">
-                    <h5 class="card-title">{{ tesis.titulo }}</h5>
-                    <p class="card-text"><i class="bi bi-people-fill me-2"></i>{{ tesis.autores }}</p>
-                    <p class="card-text card-text-last"><i class="bi bi-calendar-event me-2"></i>{{ tesis.fecha_publicacion|date:"d/m/Y" }}</p>
-                    <span class="pdf-indicator">
-                        <i class="bi bi-file-earmark-pdf-fill me-1"></i>PDF
-                    </span>
+            <a class = "card-link"href="{% if tesis.id_tesis %}{% url 'tesis_detail' tesis.id_tesis %}{% else %}#{% endif %}" class="card-link">
+                <div class="card card-animacion card-custom h-100">
+                    {% if tesis.carrera == 'Ingeniería Electrónica' %}
+                    <div class="card-header-tag ingenieria-electronica">{{ tesis.carrera }}</div>
+                    {% elif tesis.carrera == 'Ingeniería Civil' %}
+                    <div class="card-header-tag ingenieria-civil">{{ tesis.carrera }}</div>
+                    {% elif tesis.carrera == 'Ingeniería Informática' %}
+                    <div class="card-header-tag ingenieria-informatica">{{ tesis.carrera }}</div>
+                    {% else %}
+                    <div class="card-header-tag">{{ tesis.carrera }}</div>
+                    {% endif %}
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">{{ tesis.titulo }}</h5>
+                        <p class="card-text"><i class="bi bi-people-fill me-2"></i>{{ tesis.autores }}</p>
+                        <p class="card-text card-text-last"><i class="bi bi-calendar-event me-2"></i>{{ tesis.fecha_publicacion|date:"d/m/Y" }}</p>
+                        <span class="pdf-indicator">
+                            <i class="bi bi-file-earmark-pdf-fill me-1"></i>PDF
+                        </span>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
         {% empty %}
         <div class="col-12 text-center">
@@ -43,5 +45,4 @@
         {% endfor %}
     </div>
 </div>
-
 {% endblock main %}

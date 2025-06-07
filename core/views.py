@@ -8,10 +8,7 @@ from .decorators import login_excluded
 from .models import Tesis, TesisPalabrasClave
 import os
 
-# Create your views here.
 def dashboard(request):
-    #object = Object_models.create_tesis()
-    #print(object)
     ultima_tesis_por_carrera = ultima_tesis_carreras.obtener_ultimas_tesis_por_carrera()
     return render(request, 'core/dashboard.html', {'ultima_tesis_carrera': ultima_tesis_por_carrera})
 
@@ -27,7 +24,15 @@ def signout(request):
 def tesis_detail(request, tesis_id):
     tesis = get_object_or_404(Tesis, id=tesis_id)
     palabras_clave = [tesis_palabras_clave.palabras_clave for tesis_palabras_clave in tesis.tesispalabrasclave_set.all()]
-    return render(request, 'core/tesis_detail.html', {'tesis': tesis, 'palabras_clave': palabras_clave})
+    autores = [relacion.autor for relacion in tesis.tesisautores_set.all()]
+    
+    context = {
+        'tesis': tesis, 
+        'palabras_clave': palabras_clave,
+        'autores': autores,
+    }
+
+    return render(request, 'core/tesis_detail.html', context)
 
 def descargar_tesis(request, tesis_id):
     try:

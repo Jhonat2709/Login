@@ -124,7 +124,6 @@ body, html {
 }
 /* Estilos personalizados para las tarjetas (cards) */
 .card.card-custom {
-    /* height: 100%; */ /* Usaremos h-100 de Bootstrap en el HTML para igualar alturas */
     position: relative;
     display: flex;
     flex-direction: column;
@@ -138,6 +137,7 @@ body, html {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
 /* Etiqueta para la carrera en la esquina superior derecha de la tarjeta */
 .card-header-tag {
     position: absolute;
@@ -146,6 +146,7 @@ body, html {
     padding: .3rem .6rem;
     font-size: 0.75rem;
     font-weight: bold;
+    font-family: 'Montserrat','Segoe UI';
     border-radius: .25rem;
     z-index: 1;
 }
@@ -268,4 +269,10 @@ body.sidebar-collapsed .main-content {
 body.sidebar-collapsed .navbar {
     left: 80px;
     width: calc(100% - 80px);
+}
+
+/* 1. Estilo para el enlace que envuelve toda la tarjeta */
+a.card-link {
+    text-decoration: none !important; /* ¡Esto quita el subrayado de todo! */
+    color: inherit;                  /* Hace que el texto herede su color normal (negro, gris, etc.) y no sea azul */
 }
