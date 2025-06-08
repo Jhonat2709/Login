@@ -12,6 +12,7 @@ body {
     color: #333;
 }
 
+/* Estiliza la sección "Acerca-Repositorio" para centrar su contenido */
 .acerca-repositorio {
     display: flex;
     justify-content: center;
@@ -21,6 +22,7 @@ body {
     padding: 50px 20px;
 }
 
+/* Estiliza el título dentro de "acerca-repositorio" */
 .acerca-repositorio h2 {
     margin-bottom: 40px;
     font-size: 2rem;
@@ -28,6 +30,7 @@ body {
     color: #000000;
 }
 
+/* Contenedor de tarjetas con distribución flexible */
 .cards-container {
     display: flex;
     justify-content: space-between;
@@ -38,6 +41,7 @@ body {
     margin-top: 3px;
 }
 
+/* Estilos generales para las tarjetas */
 .card {
     background-color: #ffffff;
     border-radius: 8px;
@@ -47,6 +51,7 @@ body {
     flex: none;
 }
 
+/* Ajustes adicionales para las tarjetas dentro de "acerca-repositorio" */
 .acerca-repositorio .card {
     border-radius: 10px;
     max-width: 320px;
@@ -57,16 +62,19 @@ body {
     flex: 1;
 }
 
+/* Iconos dentro de las tarjetas */
 .acerca-repositorio .card i {
     font-size: 2.8rem;
     margin-bottom: 20px;
     color: #000000;
 }
 
+/* Oculta el icono con la clase "fa-solid" */
 .acerca-repositorio .card .fa-solid {
     display: none;
 }
 
+/* Estilo para los titulos de las tarjetas */
 .acerca-repositorio .card h4 {
     margin-top: 0;
     margin-bottom: 15px;
@@ -75,12 +83,14 @@ body {
     color: black;
 }
 
+/* Estilo para los parrafos dentro de las tarjetas */
 .acerca-repositorio .card p {
     font-size: 0.95rem;
     color: #555;
     line-height: 1.7;
 }
 
+/* Estilos para el pie de página */
 .site-footer {
     color: #000000;
     margin-top: 0;

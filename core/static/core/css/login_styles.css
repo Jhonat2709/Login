@@ -8,6 +8,7 @@ body, html {
     overflow: hidden;
 }
 
+/* Contenedor principal para la pagina del login */
 .login-page-wrapper {
     position: relative;
     width: 100%;
@@ -22,12 +23,14 @@ body, html {
 
 }
 
+/* Capa de contenido para estructurar el formulario */
 .content-layer {
     position: relative;
     width: 100%;
     max-width: 1100px;
 }
 
+/* Columna de formulario de inicio de sesión */
 .login-form-column {
     display: flex;
     flex-direction: column;
@@ -38,6 +41,7 @@ body, html {
     transform: translateX(-7%);
 }
 
+/* Columna para la marca o branding */
 .brand-column {
     display: flex;
     flex-direction: column;
@@ -48,6 +52,7 @@ body, html {
     padding-bottom: 35%;
 }
 
+/* Contenedor del formulario del login */
 .login-form-container {
     max-width: 420px;
     width: 100%;
@@ -55,6 +60,7 @@ body, html {
     text-align: center;
 }
 
+/* Estilo del titulo del formulario */
 .login-form-container .form-title {
     font-weight: 800;
     font-size: 2rem; 
@@ -69,6 +75,7 @@ body, html {
     position: relative;
 }
 
+/* Linea decorativa debajo del titulo */
 .login-form-container .form-title::after {
     content: '';
     position: absolute;
@@ -80,11 +87,13 @@ body, html {
     background-color: #000;
 }
 
+/* Grupo de formularios de entrada */
 .form-group {
     margin-bottom: 3.4rem;
     margin-top: 3.4rem;
 }
 
+/* Etiquetas de los campos de formulario */
 .form-group label {
     display: block;
     margin-bottom: 0.5rem;
@@ -95,10 +104,12 @@ body, html {
     letter-spacing: 0.5px;
 }
 
+/* Contenedor para icono e input */
 .input-icon-wrapper {
     position: relative;
 }
 
+/* Estilos personalizados para los inputs */
 .custom-input {
     width: 100%;
     border: none !important;
@@ -111,14 +122,17 @@ body, html {
     font-size: 0.95rem;
 }
 
+/* Estilos para el placeholder de los inputs */
 .custom-input::placeholder {
     font-size: 0.80rem;
 }
 
+/* Cambia el color del borde al enfocar el input */
 .custom-input:focus {
     border-bottom-color: #000 !important;
 }
 
+/* Posiciona el icono dentro del input */
 .input-icon {
     position: absolute;
     top: 50%;
@@ -129,6 +143,7 @@ body, html {
     pointer-events: none;
 }
 
+/* Boton de inicio de sesion */
 .btn-login {
     background-color: #000 !important;
     color: #fff !important;
@@ -146,6 +161,7 @@ body, html {
     margin-top: 2rem;
 }
 
+/* imagen de la marca */
 .brand-logo-image {
     max-width: 125%;
     height: 100%;
@@ -153,6 +169,7 @@ body, html {
     margin-top: 10%;
 }
 
+/* Estilos para alerta de error */
 .alert-custom-error {
     color: #721c24;
     background-color: #f8d7da;
@@ -164,6 +181,7 @@ body, html {
     font-size: 0.9em;
 }
 
+/* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
     body, html {
         height: auto;
@@ -211,6 +229,7 @@ body, html {
     }
 }
 
+/* Botón de regreso */
 #backButton {
     position: absolute;
     top: 30px;
